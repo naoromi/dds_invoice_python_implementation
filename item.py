@@ -2,7 +2,7 @@ import pandas as pd
 
 class Item:
     def __init__(self, item_msrp_dataframe):
-        self.item_msrp_dataframe = item_msrp_dataframe
+        self.item_msrp_dataframe = pd.DataFrame(item_msrp_dataframe)
         self.object_type = None
         self.texture = None
         self.name = None
